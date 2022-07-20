@@ -7,7 +7,7 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
                 AppConfiguration.class);
 
-        Teacher teacher0 = context.getBean("theBestTeacher", Teacher.class);
+        Teacher teacher0 = context.getBean("javaTeacher", Teacher.class);
         Teacher teacher1 = context.getBean("javaTeacher", Teacher.class);
 
         if (teacher0 == teacher1) {
